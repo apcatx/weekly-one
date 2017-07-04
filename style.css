@@ -1,25 +1,18 @@
-body {
+body{
     background-color: #F2F1E8;
     font-family: 'Merriweather', serif;
     margin: 0;
-    height: auto;
-    width: auto;
+    height: 100%;
 }
 
 header {
     display: flex;
-    width: auto;
     height: 70px;
     background-color: #FFFFFF;
     align-items: center;
     box-shadow: 0 0 4px 0 #d4d5d6;
     top: 0;
     padding: 0 0 0 20px;
-}
-
-main {
-    width: auto;
-    height: auto;
 }
 
 #logo {
@@ -81,6 +74,7 @@ h2 {
 
 .container-one {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 10px;
     max-height: 370px;
     width: 100%;
@@ -88,6 +82,7 @@ h2 {
 
 .container-two {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 10px;
     max-height: 240px;
     width: 100%;
@@ -129,31 +124,31 @@ h2 {
 
 .one {
     background-image: url("images/optimized/product-1.jpg");
-    flex-grow:3;
+    flex-grow: 25;
 }
 .two {
     background-image: url("images/optimized/product-2.jpg");
-    flex-grow: 1;
+    flex-grow: 9;
 }
 .three {
     background-image: url("images/optimized/product-3.jpg");
-    flex-grow: 1;
+    flex-grow: 7;
 }
 .four {
     background-image: url("images/optimized/product-4.jpg");
-    flex-grow: 1;
+    flex-grow: 7;
 }
 .five {
     background-image: url("images/optimized/product-5.jpg");
-    flex-grow: 1;
+    flex-grow: 2;
 }
 .six {
     background-image: url("images/optimized/product-6.jpg");
-    flex-grow: 2;
+    flex-grow: 16;
 }
 .seven {
     background-image: url("images/optimized/product-7.jpg");
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 footer {
@@ -161,9 +156,8 @@ footer {
     height: 100px;
     align-items: center;
     background-color: #2B2F26;
-    position: relative;
     width: auto;
-    justify-content: flex-start;
+    text-align: left;
     padding: 0 0 0 20px;
 }
 
@@ -176,3 +170,64 @@ h4 {
 
 
     /*----------This seperate home page from about page ----------*/
+
+
+.about {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.sign_up {
+    background-color: #F2F1E8;
+    text-align: center;
+    margin: 135px auto;
+    width: 650px;
+    height: 340px;
+    padding: 10px 0;
+}
+
+#sign_up {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.sign_up p{
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+form {
+    font-family: 'Roboto';
+    line-height: 60px;
+}
+
+#name {
+    width: 560px;
+    font-size: 20px;
+    color: grey;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: grey;
+}
+
+#email {
+    width: 560px;
+    font-size: 20px;
+    color: grey;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: grey;
+  }
+
+  #submit {
+    color: #F2F1E8;
+    background-color: #968772;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-style: none;
+    margin-top: 10px;
+  }
