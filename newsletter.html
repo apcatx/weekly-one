@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <body id="newsletter" style=background-image:url("images/optimized/background-2.jpg")>
+  <body class="news_bg">
       <header class="site-header">
           <a href="index.html" id="logo"><img src="images/optimized/bent-creek-logo.png" alt="Home" width="40px" height="40px"></a>
           <nav class="nav-links">
@@ -16,25 +16,41 @@
           <a href="newsletter.html" alt="Newsletter">newsletter</a>
           </nav>
       </header>
-      <main>
+      <main id="enroll">
         <section class="sign_up">
-          <h3 id="sign_up">Sign Up for Weekly Newsletter</h3>
-          <p>Stay up to date with events, activities, news and specials</p>
-          <form>
-            <label for="name"></label>
-            <input type="text" id="name" name="name" value="Name">
-            <br>
-            <label for="email"></label>
-            <input type="text" id="email" name="email" value="Email">
-            <input type="submit" id="submit" value="Submit">
-          </form>
+              <h3 id="sign_up">Sign Up for Weekly Newsletter</h3>
+              <p>Stay up to date with events, activities, news and specials</p>
+              <form>
+                <label for="name"></label>
+                <input type="text" id="nameInput" name="name" value="Name">
+                <br>
+                <label for="email"></label>
+                <input type="email" id="emailInput" name="email" value="Email">
+                <input type="submit" id="signupButton" value="Submit">
+              </form>
+            </div>
         </section>
       </main>
 
-      <footer>
+      <footer id="news_footer">
           <h4>Copyright 2017, Bent Creek Ceramics</h4>
       </footer>
-
+    <script type="text/javascript">
+      var nameInput = document.getElementById('nameInput');
+      var emailInput = document.getElementById('emailInput');
+      var signupButton = document.getElementById('signupButton');
+      signupButton.addEventListener('click', function(e) {
+        var nameVal = nameInput.value;
+        var emailVal = emailInput.value;
+        if (nameVal && emailVal) {
+          alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+          nameInput.value = "";
+          emailInput.value = "";
+        } else {
+          alert('We would love for you to sign up, please provide both your name and email address.');
+        }
+      });
+    </script>
 
   </body>
 
