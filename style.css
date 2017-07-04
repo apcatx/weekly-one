@@ -172,8 +172,7 @@ h4 {
     /*----------This seperate home page from about page ----------*/
 
 
-.about {
-
+.newsletter {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -182,7 +181,7 @@ h4 {
 .sign_up {
     background-color: #F2F1E8;
     text-align: center;
-    margin: 135px auto;
+    margin: 180px auto;
     width: 650px;
     height: 340px;
     padding: 10px 0;
@@ -221,13 +220,138 @@ form {
     border-style: solid;
     border-width: 0px 0px 3px 0px;
     border-color: grey;
-  }
+}
 
-  #submit {
+#submit {
     color: #F2F1E8;
     background-color: #968772;
     padding: 15px 40px;
     font-size: 20px;
     border-style: none;
     margin-top: 10px;
-  }
+}
+
+
+/*----------This seperate about page from newsletter page ----------*/
+
+.about_main{
+    margin: 0 200px;
+}
+
+.about_main h1{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 60px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.about_top {
+    width: 0 auto;
+    min-height: auto;
+}
+
+.photo {
+    display: inline-block;
+    float: left;
+}
+
+#birdhouse {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    height: 150px;
+    width: 200px;
+}
+
+.paragraph {
+    line-height: 2em;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.block {
+    font-style: italic;
+    border-style: solid;
+    border-color: #2B2F26;
+    border-width: 0 0 0 1px;
+    line-height: 2em;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 10px 40px;
+    margin: 0;
+}
+
+.room {
+  display: flex;
+  background-image: url("images/optimized/background-3.jpg");
+  height: 240px;
+  background-position: center;
+  background-size: cover;
+  margin: 30px -200px;
+  align-items: center;
+}
+
+#room {
+  color: #F2F1E8
+}
+
+#pottery {
+    margin: 0 30px;
+    height: 150px;
+    width: 200px;
+    margin-top: 40px;
+
+}
+
+.photo_two {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    float: right;
+    width: 245px;
+    margin-top: 0px 30px;
+}
+
+#photo {
+    font-size: 10px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 200;
+
+}
+
+.facilities {
+    margin: 60px 0;
+}
+
+.table {
+    margin: 30px 0;
+    padding:
+}
+
+th {
+  font-weight: normal;
+}
+
+table, th, tr, td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   width: auto;
+   padding: 20px 25px;
+}
+
+.tr_bg {
+    background-color: #EEE8DA;
+}
+
+
+#news_foot{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    background-color: #2B2F26;
+    width: auto;
+    text-align: left;
+    padding: 0 0 0 20px;
+}
