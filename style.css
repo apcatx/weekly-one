@@ -328,9 +328,11 @@ form {
 .room {
     display: flex;
     background-image: url("images/optimized/background-3.jpg");
-    height: 240px;
+    max-height: 240px;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 70px -200px;
     align-items: center;
 }
